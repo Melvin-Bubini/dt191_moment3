@@ -28,7 +28,7 @@
                         <td>@Html.DisplayFor(modelItem => item.Title)</td>
                         <td>@Html.DisplayFor(modelItem => item.Genre)</td>
                         <td>@Html.DisplayFor(modelItem => item.PublicationYear)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Author.Name)</td>
+                        <td>@(item.Author != null ? Html.DisplayFor(modelItem => item.Author.Name) : "Okänd författare")</td>
                         <td>
                             <div class="btn-group" role="group">
                                 <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.Id">✏️ Redigera</a>
@@ -38,7 +38,6 @@
                         </td>
                     </tr>
                 }
-            </tbody>
         </table>
     </div>
 </div>

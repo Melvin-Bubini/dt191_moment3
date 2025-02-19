@@ -2,13 +2,27 @@
     ViewData["Title"] = "Startsida";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Startsida</h1>
+<div class="container text-center mt-5">
+    <h1 class="display-4">📚 Välkommen till Bokhanteraren!</h1>
 
-    <h2>
-        Senaste böckerna
-    </h2>
+    <p class="lead mt-3">
+        Detta är en webbapplikation där du enkelt kan hantera böcker och författare.  
+        Du kan lägga till nya böcker, redigera information, och ta bort gamla titlar.  
+        Dessutom kan du hantera författare och koppla dem till böcker.
+    </p>
 
-    
-    
+    <hr class="my-4">
+
+    <h3>Funktioner</h3>
+    <ul class="list-group list-group-flush text-start d-inline-block">
+        <li class="list-group-item">✔️ Lägg till nya böcker med titel, genre och utgivningsår</li>
+        <li class="list-group-item">✔️ Koppla böcker till författare eller skapa nya</li>
+        <li class="list-group-item">✔️ Hantera befintliga böcker och uppdatera information</li>
+        <li class="list-group-item">✔️ Radera böcker och författare vid behov</li>
+    </ul>
+
+    <div class="mt-4">
+        <a class="btn btn-primary btn-lg" asp-controller="Book" asp-action="Index">📖 Visa böcker</a>
+        <a class="btn btn-secondary btn-lg" asp-controller="Author" asp-action="Index">✍️ Hantera författare</a>
+    </div>
 </div>
