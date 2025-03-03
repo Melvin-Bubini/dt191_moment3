@@ -15,14 +15,6 @@ obj/
 *.TestResults/
 .env
 
-# Entity Framework Migrations
-Migrations/
-
-# SQLite database
-BookDb.db
-BookDb.db-shm
-BookDb.db-wal
-
 # Secrets & Configs
 appsettings.Development.json
 appsettings.Local.json
